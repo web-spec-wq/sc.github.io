@@ -1,0 +1,48 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="prac4.css">
+<script  language="javascript" type="text/javascript" src="prac4.js"></script>
+<title>Form Validation</title>
+</head>
+<body>
+    <form name="myform" method="post" onsubmit="return validation()">
+    <table id="table" align="center">
+    <tr>
+    <th id="heading" colspan="8"><b>Payment Information</b></th></tr>
+    <tr>
+    <td><input id="firstname" type="text" name="name" placeholder="First Name" align="left"></td>
+                <td><input id="firstname"type="text" name="surname" placeholder="Surname" align="right"></td>
+    </tr>
+    <tr>
+                 <td colspan="3"><input id="cn" type="number" name="cardnumber" placeholder="Card Number" maxlength=16 size="50"></td>
+    </tr>
+    <tr>
+    <td><input id="firstname" type="month" name="mmyy" placeholder="MM/YY"></td>
+    <td><input id="firstname" type="password" name="cvv" placeholder="CVV" maxlength=3 ></td>
+           </tr>
+           <tr>
+               <td colspan="5" height="100">
+                
+                  <tr>
+            <td><div id="box2"><div id="division"></div></div></td>
+              
+            
+          </tr>
+         
+            
+           <tr>
+              <td colspan="5"><input id="cn" type="text" name="address" placeholder="Street Address" size="50"></td>
+           </tr>
+           <tr>
+             <td><input id="firstname" type="text" name="city" placeholder="City"></td>
+             <td><input id="firstname" type="number" name="zipcode" placeholder="Zip Code" maxlength=6 ></td>
+           </tr>
+           <tr>
+            <td colspan="5"><input id="cn" type="email" name="email" placeholder="Email" size="50"></td>
+           </tr>
+           <tr>
+            <td id="button" colspan="5"><button id="button">Submit</button></td>
+           </tr>
+    </table>
+    </form>
+</body>
